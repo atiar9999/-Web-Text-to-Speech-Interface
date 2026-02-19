@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxLingua | English & Bangla Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-panel">
+        <header>
+            <h1>🗣️ VoxLingua</h1>
+            <p class="subhead">Speak text naturally — English, বাংলা, or mixed</p>
+        </header>
+
+        <main>
+            <div class="input-area">
+                <textarea id="textInput" placeholder="Paste or type your text here..." spellcheck="false"></textarea>
+                <div class="lang-badge" id="langHint">
+                    <span class="indicator"></span> Analysing...
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="voice-selector">
+                    <label for="voiceSelect">🎤 Voice</label>
+                    <select id="voiceSelect"></select>
+                </div>
+
+                <div class="speed-control">
+                    <label>⚡ Speed</label>
+                    <div class="speed-buttons">
+                        <button id="speedDown" aria-label="Decrease speed">−</button>
+                        <span id="speedValue">1.0×</span>
+                        <button id="speedUp" aria-label="Increase speed">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-bar">
+                <button class="btn primary" id="speakBtn">🔊 Speak</button>
+                <button class="btn" id="pauseBtn">⏸️ Pause</button>
+                <button class="btn" id="resumeBtn">▶️ Resume</button>
+                <button class="btn warning" id="stopBtn">⏹️ Stop</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>✨ Instant voice synthesis • No server • Your privacy stays intact</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
