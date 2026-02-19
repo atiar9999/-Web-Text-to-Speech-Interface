@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="glass-panel-outer">
     <div class="glass-panel">
         <header>
             <h1>🗣️ VoxLingua</h1>
@@ -38,10 +39,17 @@
                 </div>
             </div>
 
+            <!-- Progress bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+            </div>
+
             <div class="action-bar">
                 <button class="btn primary" id="speakBtn">🔊 Speak</button>
                 <button class="btn" id="pauseBtn">⏸️ Pause</button>
                 <button class="btn" id="resumeBtn">▶️ Resume</button>
+                <button class="btn" id="rewindBtn" title="Skip backward ~5 sec">⏪ Rewind</button>
+                <button class="btn" id="forwardBtn" title="Skip forward ~5 sec">⏩ Forward</button>
                 <button class="btn warning" id="stopBtn">⏹️ Stop</button>
             </div>
         </main>
@@ -49,6 +57,7 @@
         <footer>
             <p>✨ Instant voice synthesis • No server • Your privacy stays intact</p>
         </footer>
+    </div>
     </div>
 
     <script src="script.js"></script>
